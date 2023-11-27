@@ -153,7 +153,16 @@ p {
     display: inline-block;
     margin: 3px;
     justify-content: center;
+    background-color: #854fee;
+    color: white;
 }
+.btn:hover {
+    border-color: var(--secondary-color);
+    background: var(--bg-white);
+    color: var(--secondary-text);
+    box-shadow: none;
+}
+
 .header_wrapper .nav-item .nav-link {
     font-family: var(--primary-font);
     font-size: 0.9375rem;
@@ -369,7 +378,7 @@ p {
 .pie-pagina{
     width: 100%;
     background-color: #854fee;
-    margin-top: 4rem;
+    margin-top: 5rem;
  }
  
 
@@ -383,6 +392,30 @@ p {
     font-size: 15px;
  }
 
+  
+
+/* =================== Portfolio section ==================*/
+
+
+.portfolio-item .portfolio-btn {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    opacity: 0;
+    transition: .5s;
+    margin-bottom:  130%;
+  }
+  
+  .portfolio-item:hover .portfolio-btn {
+    opacity: 1;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    top: 30px;
+    left: 30px;
+  }
   
 /* footer */
 .footer_wrapper .social-icon li {
@@ -504,3 +537,4 @@ p {
         
 
 }
+

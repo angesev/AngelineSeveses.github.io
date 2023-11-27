@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angeline C. Seveses | Web Designer</title>
+    <title>Angeline Seveses | Web Designer</title>
 
 
     <!--Favicon-->
@@ -19,7 +19,7 @@
     <!-- Bootstrap 5 CDN Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css">
     <!-- Custom File's Link -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive-style.css">
@@ -70,13 +70,13 @@
                     </h1>
                     <p>Skilled and
                         creative web designer. I enjoy creating responsive, user-friendly and appealing designs for different platforms. </p>
-                        <!-- <div class="socials-icons">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="#"><i class="fab fa-behance"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
+                        <div class="socials-icons">
+                            <a href="https://www.linkedin.com/in/angeline-seveses/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.behance.net/angelineseveses"><i class="fab fa-behance"></i></a>
+                            <a href="https://www.instagram.com/sevdsgn/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/AngelineSeveses"><i class="fab fa-github"></i></a>
                             </ul>
-                        </div> -->
+                        </div>
                         <a href="./files/resume.pdf" download='seveses' class="main-btn primary-btn mt-4">Download CV</a>
                 </div>
                
@@ -100,7 +100,7 @@
                
                 <div class=" right col-lg-5 mb-4 mb-lg-0">
                     <h3>About Me</h3>
-                    <p>Hello there! I'm a web designer eager to explore the exciting world of web development. Passionate about crafting responsive, user-friendly, visually appealing websites/apps design.</p>
+                    <p>Hello there! I'm Angeline, graduate of Bachelor of Science in Information Technology Major in Web and Mobile Technologies. I'm a web designer eager to explore the exciting world of web development. Passionate about crafting responsive, user-friendly, visually appealing websites/apps design.</p>
                     <p>Possess a good sense of design, knowledgeable about the most modern design tools, and motivated to bring innovative ideas to life.</p>
                        
                         <div class="line">
@@ -112,15 +112,22 @@
                             </div>
                             <div class="line">
                                 <div class="info">
-                                    <span>CSS</span>
-                                    <span>80%</span>
+                                    <span>Bootstrap</span>
+                                    <span>70%</span>
                                 </div>
                                 <div class="bars css"></div>
                             </div>
                             <div class="line">
                                 <div class="info">
-                                    <span>Bootstrap</span>
+                                    <span>Javascript</span>
                                     <span>70%</span>
+                                </div>
+                                <div class="bars css"></div>
+                            </div>
+                            <div class="line">
+                                <div class="info">
+                                    <span>CSS</span>
+                                    <span>80%</span>
                                 </div>
                                 <div class="bars bootstrap"></div>
                             </div>
@@ -136,136 +143,159 @@
     <!--ABOUT END -->
    
     <!-- PROJECTS START -->
-    <section id="portfolio" class="portfolio_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-left mb-md-5 mb-2">
-                    <center> <h3>MY LATEST PROJECTS</h3></center>
-                </div>
-            </div>
-            <div class="row">
-                <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button type="button" class="btn btn-outline-primary" id="pills-one-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one"
-                        aria-selected="true">Web Design</button>
-                        <!-- <button type="button" class="btn btn-outline-primary m-1 nav-link active" id="pills-one-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one"
-                            aria-selected="true">All</button>
-                            -->
-                    </li>
-                    <br>
-                    <li class="nav-item" role="presentation">
-                        <button type="button" class="btn btn-outline-primary" id="pills-two-tab" data-bs-toggle="pill" data-bs-target="#pills-two"
-                        type="button" role="tab" aria-controls="pills-two" aria-selected="true">Mobile Design</button>
-                        <!-- <button class="nav-link" id="pills-two-tab" data-bs-toggle="pill" data-bs-target="#pills-two"
-                            type="button" role="tab" aria-controls="pills-two" aria-selected="true">Web Design</button> -->
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button type="button" class="btn btn-outline-primary" id="pills-three-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three"
-                        aria-selected="true">Graphic Design</button>
-                        <!-- <button class="nav-link" id="pills-three-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three"
-                            aria-selected="true">Graphic Design</button> -->
-                    </li>
+  
+  <!-- Portfolio Start -->
+  <div class="container-fluid pt-5 pb-3" id="portfolio">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h3>SAMPLE DESIGNS & PROJECTS</h3>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center mb-2">
+                <ul class="list-inline mb-4" id="portfolio-flters">
+                    <li class="btn btn-sm btn-outline m-1 active " style="font-size: 17px; " data-filter="*">All</li>
+                    <li class="btn btn-sm btn-outline m-1" style="font-size: 17px; " data-filter=".first">Website Design</li>
+                    <li class="btn btn-sm btn-outline m-1" style="font-size: 17px; " data-filter=".second"> Mobile App Design</li>
+                    <li class="btn btn-sm btn-outline m-1" style="font-size: 17px; " data-filter=".third">Graphic Design</li>
                 </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-one" role="tabpanel"
-                        aria-labelledby="pills-one-tab">
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="portfolio-img">
-                                    <img decoding="async" src="images/wd1.jpg" style="border-radius: 1%; height: 310px;" class="img-fluid w-100">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="portfolio-img">
-                                    <img decoding="async" src="images/wd1.png" style="border-radius: 1%; height: 310px;" class="img-fluid w-100">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="portfolio-img">
-                                    <img decoding="async" src="images/wd7.png" style="border-radius: 1%; height: 310px;" class="img-fluid w-100">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="portfolio-img">
-                                    <img decoding="async" src="images/wd3.png" style="border-radius: 1%; height: 310px;" class="img-fluid w-100">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="portfolio-img">
-                                    <img decoding="async" src="images/wd4.png" style="border-radius: 1%; height: 310px;" class="img-fluid w-100">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-two" role="tabpanel"
-                        aria-labelledby="pills-one-tab">
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="portfolio-img">
-                                    <img decoding="async" src="images/md.png" style="border-radius: 1%; height: 310px;" class="img-fluid w-100">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="portfolio-img">
-                                    <img decoding="async" src="images/md2.png" style="border-radius: 1%; height: 310px;" class="img-fluid w-100">
-                                </div>
-                            </div>
-                         
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="portfolio-img">
-                                    <img decoding="async" src="images/md3.png" style="border-radius: 1%; height: 310px;" class="img-fluid w-100">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab">
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="portfolio-img">
-                                    <img decoding="async" src="images/gs1.jpeg" style="border-radius: 1%; height: 310px;" class="img-fluid w-100">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="portfolio-img">
-                                    <img decoding="async" src="images/sample2.png" style="border-radius: 1%; height: 310px;" class="img-fluid w-100">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="portfolio-img">
-                                    <img decoding="async" src="images/sample1.png" style="border-radius: 1%; height: 310px;" class="img-fluid w-100">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="portfolio-img">
-                                    <img decoding="async" src="images/gd2.png" style="border-radius: 1%; height: 310px;" class="img-fluid w-100">
-                                </div>
-                            </div>
-                           
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
-    </section>
-    <!-- portfolio Section exit -->
+        <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid rounded w-100" src="images/wd1.jpg" style="border-radius: 1%; height: 310px;" alt="">
+                    <div class="portfolio-btn bg-transparent d-flex align-items-center justify-content-center">
+                        <a href="images/wd1.jpg" data-lightbox="portfolio">
+                            <i class="fa fa-expand text-dark" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid rounded w-100" src="images/md.png" style="border-radius: 1%; height: 310px;" alt="">
+                    <div class="portfolio-btn bg-transparent d-flex align-items-center justify-content-center">
+                        <a href="images/md.png" data-lightbox="portfolio">
+                            <i class="fa fa-expand text-dark" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid rounded w-100" src="images/sample2.png" style="border-radius: 1%; height: 310px;" alt="">
+                    <div class="portfolio-btn bg-transparent d-flex align-items-center justify-content-center">
+                        <a href="images/sample2.png" data-lightbox="portfolio">
+                            <i class="fa fa-expand text-dark" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
- 
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid rounded w-100" src="images/wd7.png" style="border-radius: 1%; height: 310px;" alt="">
+                    <div class="portfolio-btn bg-transparent d-flex align-items-center justify-content-center">
+                        <a href="images/wd7.png" data-lightbox="portfolio">
+                            <i class="fa fa-expand text-dark" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid rounded w-100" src="images/md2.png" style="border-radius: 1%; height: 310px;" alt="">
+                    <div class="portfolio-btn bg-transparent d-flex align-items-center justify-content-center">
+                        <a href="images/md2.png" data-lightbox="portfolio">
+                            <i class="fa fa-expand text-dark" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid rounded w-100" src="images/sample1.png" style="border-radius: 1%; height: 310px;" alt="">
+                    <div class="portfolio-btn bg-transparent d-flex align-items-center justify-content-center">
+                        <a href="images/sample1.png" data-lightbox="portfolio">
+                            <i class="fa fa-expand text-dark" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid rounded w-100" src="images/wd1.png" style="border-radius: 1%; height: 310px;" alt="">
+                    <div class="portfolio-btn bg-transparent d-flex align-items-center justify-content-center">
+                        <a href="images/wd1.png" data-lightbox="portfolio">
+                            <i class="fa fa-expand text-dark" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid rounded w-100" src="images/wd4.png" style="border-radius: 1%; height: 310px;" alt="">
+                    <div class="portfolio-btn bg-transparent d-flex align-items-center justify-content-center">
+                        <a href="images/wd4.png" data-lightbox="portfolio">
+                            <i class="fa fa-expand text-dark" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid rounded w-100" src="images/wd5.png" style="border-radius: 1%; height: 310px;" alt="">
+                    <div class="portfolio-btn bg-transparent d-flex align-items-center justify-content-center">
+                        <a href="images/wd5.png" data-lightbox="portfolio">
+                            <i class="fa fa-expand text-dark" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid rounded w-100" src="images/md3.png" style="border-radius: 1%; height: 310px;" alt="">
+                    <div class="portfolio-btn bg-transparent d-flex align-items-center justify-content-center">
+                        <a href="images/md3.png" data-lightbox="portfolio">
+                            <i class="fa fa-expand text-dark" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                <div class="position-relative overflow-hidden mb-2">
+                    <img class="img-fluid rounded w-100" src="images/gs1.jpeg" style="border-radius: 1%; height: 310px;" alt="">
+                    <div class="portfolio-btn bg-transparent d-flex align-items-center justify-content-center">
+                        <a href="images/gs1.jpeg" data-lightbox="portfolio">
+                            <i class="fa fa-expand text-dark" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- Portfolio End -->
+
     
     <!--footer start-->
    
     <footer id="footer" class="pie-pagina">
     <br><br>
+    <div class="box"><center>
+        <div class="social-icons">
+            <h3 style="color: #ffffff">Keep In Touch</h3>
+            <p style="color: #ffffff">Let's create impactful design together.</p>
+        </ul>
+    </div>
        <div class="box"><center>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/angeline-seveses/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.behance.net/angelineseveses"><i class="fab fa-behance"></i></a>
             <a href="https://www.instagram.com/sevdsgn/"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/AngelineSeveses"><i class="fab fa-github"></i></a>
         </ul>
     </div>
     </div>
@@ -279,7 +309,7 @@
      </div>
    </footer>
     <!--footer end-->
- 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
     <!-- Bootstrap 5 JS CDN Links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
@@ -287,6 +317,21 @@
     <!-- Custom Js Link -->
     <script src="js/main.js"></script>
     <script src="js/disable.js"></script>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/typed/typed.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    
+    <!-- Template Javascript -->
+    <script src="js/mains.js"></script>
+
 </body>
 
 </html>
